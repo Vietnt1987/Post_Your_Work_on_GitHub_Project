@@ -21,12 +21,15 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city_name = str(input('Please enter one of the cities Chicago, Washington or New York City for your analysis : ')).lower();
+         # chicago
         if city_name == 'chicago':
             city_name =CITY_DATA[city_name]
             break;
+        # washington
         elif city_name == 'washington':
             city_name =CITY_DATA[city_name]
             break;
+         # new york city
         elif city_name == 'new york city':
             city_name =CITY_DATA[city_name]
             break;
@@ -38,25 +41,30 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True:
          month = str(input('Please enter any one of the first 6 months or enter All to select all 6 months : ')).lower();
-         
+         # january
          if month == 'january':
             month = months[0]
             break;
+         # february
          elif month == 'february':
             month = months[1]
             break;
+         # march
          elif month == 'march':
             month = months[2]
             break;
+         # april
          elif month == 'april':
             month = months[3]
             break;
+         # may
          elif month =='may':
             month = months[4]
             break;
          elif month == 'june':
             month = months[5]
             break;
+         # all
          elif month == "all":
             print('no month need filter');
             break;
