@@ -101,7 +101,6 @@ def get_filters():
     print('-'*40)
     return city_name, month, day
 
-
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
