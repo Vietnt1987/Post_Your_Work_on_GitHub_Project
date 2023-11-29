@@ -21,12 +21,15 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city_name = str(input('Please enter one of the cities Chicago, Washington or New York City for your analysis : ')).lower();
+         # chicago
         if city_name == 'chicago':
             city_name =CITY_DATA[city_name]
             break;
+        # washington
         elif city_name == 'washington':
             city_name =CITY_DATA[city_name]
             break;
+         # new york city
         elif city_name == 'new york city':
             city_name =CITY_DATA[city_name]
             break;
